@@ -21,7 +21,11 @@ function App(props) {
         <p>
         <button onClick={()=> setCount(count + 1)}>+1</button>
         <button onClick={()=> setCount(count - 1)}>-1</button>
+<<<<<<< HEAD
         <button onClick = {() => setCount(0)}> Reset </button>
+=======
+        <button onClick = {() => setCount(props.count)}> Reset Button</button>
+>>>>>>> 09ce7df3e0247354bab5122c9af8181b26d680ea
       </p>
     </div>
   );
