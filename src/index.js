@@ -1,12 +1,36 @@
-import React from 'react';
+import React,{useEffect,useState} from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import App from './App';
-import * as serviceWorker from './serviceWorker';
+import './App.css';
+
+
+
+
+let  App = (props) => {
+
+  const countData = JSON.parse(localStorage.getItem('count'));
+  const [count, setCount] = useState(countData || 0);
+  useEffect(() => {
+    localStorage.setItem('count', JSON.stringify(count));
+
+  });
+
+  return (
+    <div>
+      <p>
+        Hello world!
+        This is your SGCC React course
+        </p>
+      Your count is {count}
+      <p>
+        <button onClick={() => setCount(count + 1)}>+1</button>
+        <button onClick={() => setCount(count - 1)}>-1</button>
+        <button onClick={() => setCount(0)}> Reset Button</button>
+      </p>
+    </div>
+  );
+};
 
 ReactDOM.render(<App/>, document.getElementById('root'));
 
-// If you want your app to work offline and load faster, you can change
-// unregister() to register() below. Note this comes with some pitfalls.
-// Learn more about service workers: https://bit.ly/CRA-PWA
-serviceWorker.unregister();
+
