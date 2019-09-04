@@ -98,14 +98,14 @@ const Calculator = () => {
             <h1>{value}</h1>
             <button onClick={buttonPress(1)}> 1 </button>
             <button onClick={buttonPress(2)}> 2 </button>
-            <button onClick={buttonPress(3)}> 3 </button>
+            {/* <button onClick={buttonPress(3)}> 3 </button>
             <button onClick={buttonPress(4)}> 4 </button>
             <button onClick={buttonPress(5)}> 5 </button>
             <button onClick={buttonPress(6)}> 6 </button>
             <button onClick={buttonPress(7)}> 7 </button>
             <button onClick={buttonPress(8)}> 8 </button>
             <button onClick={buttonPress(9)}> 9 </button>
-            <button onClick={buttonPress(0)}> 0 </button>
+            <button onClick={buttonPress(0)}> 0 </button> */}
             <button onClick={inputCombine("+")}> + </button>
             <button onClick={inputCombine("-")}> - </button>
             <button onClick={inputCombine("/")}> / </button>
