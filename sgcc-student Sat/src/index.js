@@ -2,6 +2,8 @@ import React, {useState} from 'react';
 import ReactDOM from 'react-dom';
 import Person from './Person';
 import Counter from './Counter'
+import Calculator from './Calculator'
+import NoteApp from './NoteApp'
 
 let root = document.getElementById('root')
 
@@ -28,7 +30,7 @@ const App = () => {
 
 
 
-ReactDOM.render(<Counter />, root)
+ReactDOM.render(<NoteApp />, root)
 
 
 

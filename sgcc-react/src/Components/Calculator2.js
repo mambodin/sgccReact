@@ -14,13 +14,12 @@ const Calculator2 = () => {
             else {
                 setInputs(inputs + num)
             }
-
         }
     }
 
     let execute = () => {
-        console.log(inputs)
-        console.log(eval(inputs))
+        // console.log(inputs)
+        // console.log(eval(inputs))
         setDisplay(eval(inputs))
         setInputs(0)
     }

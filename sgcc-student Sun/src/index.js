@@ -1,6 +1,10 @@
 import React, {useState} from 'react';
 import ReactDOM from 'react-dom';
 import Person from './Person';
+import Calculator from './Calculator'
+import Counter from './Counter'
+import NoteApp from './NoteApp'
+
 
 let root = document.getElementById('root')
 
@@ -24,24 +28,24 @@ let superhero = [{
 }]
 
 
-let Counter = () =>{
-    let [times,setTimes] = useState(0)
-    let handleClick = () => {
-        setTimes(times + 1)
-    }
-    return (
-        <div>
-        <p>You clicked {times}</p>
-        <button onClick={handleClick}>Plus 1</button>
-        </div>
-    )
-}
+// let Counter = () =>{
+//     let [times,setTimes] = useState(0)
+//     let handleClick = () => {
+//         setTimes(times + 1)
+//     }
+//     return (
+//         <div>
+//         <p>You clicked {times}</p>
+//         <button onClick={handleClick}>Plus 1</button>
+//         </div>
+//     )
+// }
 
 
 const App = () => {
     return(
         <div>
-        <Counter />
+
 
         {
             superhero.map((hero) => {
@@ -58,6 +62,6 @@ const App = () => {
     )
 }
 
-ReactDOM.render(<App /> , root)
+ReactDOM.render(<NoteApp /> , root)
 
 

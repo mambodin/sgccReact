@@ -4,7 +4,7 @@ import React , {useState, useEffect}from 'react'
 const Counter = () => {
 
     let counterData = JSON.parse(localStorage.getItem('counter'))
-    let [count, setState] = useState(counterData || 0) 
+    let [count, setState] = useState( counterData || 0)
     let handleClickPlus = () => {
         setState(count + 1)
     }
@@ -17,8 +17,7 @@ const Counter = () => {
     }
 
     useEffect(()=> {
-        localStorage.setItem('counter', JSON.stringify(count))
-        // console.log(localStorage.getItem('counter'))
+        localStorage.setItem('counter',JSON.stringify(count))
     })
 
     return (
