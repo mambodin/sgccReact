@@ -39,8 +39,6 @@ const NoteApp = () => {
         }
     }
 
-
-
     return (
         <div>
             <h1>My Notes</h1>

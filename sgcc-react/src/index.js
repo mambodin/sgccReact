@@ -15,6 +15,6 @@ import Indecision from './Components/Indecision';
  
 
 
-ReactDOM.render(<NoteApp />, document.getElementById('root'));
+ReactDOM.render(<Indecision />, document.getElementById('root'));
 
 
