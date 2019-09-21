@@ -56,7 +56,7 @@ const Indecision = () => {
                 {
                     choices.length > 1 ? <button onClick={handleDecision}>Make My Choice!</button> : ''
                 }
-                {decision === '' ? <p></p> : <p>{decision}</p>}
+                {decision === '' ? <p></p> : <p>The computer has decided that you shall! <br/>{decision}</p>}
 
             </div>
 
