@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import './Indecision.css';
+import '../Css/Indecision.css';
 
 
 const Indecision = () => {
@@ -56,10 +56,10 @@ const Indecision = () => {
                 {
                     choices.length > 1 ? <button onClick={handleDecision}>Make My Choice!</button> : ''
                 }
-                {decision === '' ? <p></p> : <p>The computer has decided that you shall! <br/>{decision}</p>}
+                {decision === '' ? <p></p> : <p>The computer has decided that you shall <br/>{decision}!</p>}
 
             </div>
-
+               
 
 
         </div>

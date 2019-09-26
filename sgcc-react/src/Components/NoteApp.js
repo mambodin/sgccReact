@@ -60,6 +60,8 @@ const NoteApp = () => {
                 <button>Add Note</button>
             </form>
 
+
+
         </div>
     )
 }

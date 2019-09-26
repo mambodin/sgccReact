@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import "./Calculator.css"
+import "../Css/Calculator.css"
 
 const Calculator2 = () => {
     let [display, setDisplay] = useState(0)
