@@ -7,15 +7,6 @@ const DataPull = () => {
 
     useEffect(() => {
 
-        // let firebasePull = async () => {
-        //     let snapshot = await firebase.database().ref("react-firebase/").once("value");
-        //     let dataRef = snapshot.val();
-        //     let dataArray = Object.entries(dataRef)
-        //     setData(dataArray)
-
-        // }
-        // firebasePull()
-
         let fireBasePull = firebase.database().ref('react-firebase/').on("value", (snapshot) => {
                 let dataRef = snapshot.val()
                 let dataArray = Object.entries(dataRef)
@@ -25,7 +16,6 @@ const DataPull = () => {
         return () => fireBasePull()
     }, [])
 
-    console.log(data)
     return data
 }
 
@@ -43,7 +33,7 @@ const Inventory = () => {
 
     let items = DataPull()
 
-    DataSave({name:"malik",image:'http://',price:100})
+    DataSave({name:"malik",image:'http://testimage.com',price:100})
 
 
     return (
