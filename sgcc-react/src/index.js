@@ -6,7 +6,7 @@ import Counter from './Components/Counter';
 import App from './Components/App';
 import Calculator2 from './Components/Calculator2';
 import Indecision from './Components/Indecision';
-import Inventory from './Components/Inventory'
+import Inventory from './Components/PhotoAlbum'
 
 let Appl = () => {
     return (

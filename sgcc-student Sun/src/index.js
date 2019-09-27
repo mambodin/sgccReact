@@ -4,6 +4,7 @@ import Person from './Person';
 import Calculator from './Calculator'
 import Counter from './Counter'
 import NoteApp from './NoteApp'
+import Indecision from './Indecison'
 
 
 let root = document.getElementById('root')
@@ -62,6 +63,6 @@ const App = () => {
     )
 }
 
-ReactDOM.render(<NoteApp /> , root)
+ReactDOM.render(<Indecision /> , root)
 
 
