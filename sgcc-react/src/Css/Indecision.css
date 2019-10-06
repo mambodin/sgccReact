@@ -1,0 +1,24 @@
+/* body{
+    background: #7603d38f;
+    text-align: center;
+    margin: 3em;
+    color: white;
+    
+} */
+
+.choice{
+    display:inline-flex;
+    text-align: left;
+}
+
+.choice ul{
+    padding:0;
+    margin:0;
+}
+
+.decision{
+    display:block;
+    text-align: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 2em;
+}
