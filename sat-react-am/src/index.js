@@ -49,18 +49,3 @@ ReactDOM.render(<App/>, root);
 
 
 
-// let jsx = (
-//     <div>
-        { name === "" ? <p>No name</p> : <h1>{name}</h1> }
-
-//         <p> Hello World</p>
-//     </div>
-// )
-
-// let superhero = (
-//     <>
-//         <p> Name: {superman.name}</p>
-//         <p>Age: {superman.age}</p>
-//         <p> Weight: {superman.weight}</p>
-//     </>
-// )
