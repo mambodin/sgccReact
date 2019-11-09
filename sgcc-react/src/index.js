@@ -10,7 +10,7 @@ import Inventory from './Components/PhotoAlbum'
 
 let Appl = () => {
     return (
-    <Inventory />
+    < Calculator2 />
     )
 }
 
