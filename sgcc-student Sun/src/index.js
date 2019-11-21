@@ -70,10 +70,6 @@ const App = () => {
     )
 }
 
-<<<<<<< HEAD
-ReactDOM.render(<Indecision /> , root)
-=======
 ReactDOM.render(jsx , root)
->>>>>>> 0fb382854fe6ccfd4a146d3a7b9974f271687d9c
 
 

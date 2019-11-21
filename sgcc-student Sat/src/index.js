@@ -4,10 +4,7 @@ import Person from './Person';
 import Counter from './Counter'
 import Calculator from './Calculator'
 import NoteApp from './NoteApp'
-<<<<<<< HEAD
-=======
 import PhotoAlbum from './PhotoAlbum'
->>>>>>> 0fb382854fe6ccfd4a146d3a7b9974f271687d9c
 
 let root = document.getElementById('root')
 
@@ -34,8 +31,6 @@ ReactDOM.render(<PhotoAlbum />, root)
 //         </div>
 //     )
 // }
-<<<<<<< HEAD
-=======
 
 // let batman = {
 //     title: 'Batman',
@@ -54,4 +49,3 @@ ReactDOM.render(<PhotoAlbum />, root)
 //     )
 
 // }
->>>>>>> 0fb382854fe6ccfd4a146d3a7b9974f271687d9c
