@@ -4,33 +4,20 @@ import Person from './Person';
 import Counter from './Counter'
 import Calculator from './Calculator'
 import NoteApp from './NoteApp'
+<<<<<<< HEAD
+=======
+import PhotoAlbum from './PhotoAlbum'
+>>>>>>> 0fb382854fe6ccfd4a146d3a7b9974f271687d9c
 
 let root = document.getElementById('root')
 
 
 
 
-let batman = {
-    title: 'Batman',
-    name: 'Bruce Wayne',
-    age: 35,
-    height: "6'2",
-    weight: "95kg",
-    img: "http://conceptartworld.com/wp-content/uploads/2016/03/Batman_Concept_Art_Illustration_01_Admira_Wijaya_solitude.jpg",
-    attributes:[" strength"," agility"," robin"]
-}
-
-const App = () => {
-
-    return (
-        <Counter />
-    )
-
-}
 
 
 
-ReactDOM.render(<NoteApp />, root)
+ReactDOM.render(<PhotoAlbum />, root)
 
 
 
@@ -47,3 +34,24 @@ ReactDOM.render(<NoteApp />, root)
 //         </div>
 //     )
 // }
+<<<<<<< HEAD
+=======
+
+// let batman = {
+//     title: 'Batman',
+//     name: 'Bruce Wayne',
+//     age: 35,
+//     height: "6'2",
+//     weight: "95kg",
+//     img: "http://conceptartworld.com/wp-content/uploads/2016/03/Batman_Concept_Art_Illustration_01_Admira_Wijaya_solitude.jpg",
+//     attributes:[" strength"," agility"," robin"]
+// }
+
+// const App = () => {
+
+//     return (
+//         <Counter />
+//     )
+
+// }
+>>>>>>> 0fb382854fe6ccfd4a146d3a7b9974f271687d9c

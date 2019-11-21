@@ -1,15 +1,11 @@
 {
-  "name": "sgcc-student",
+  "name": "sat-react-am",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-<<<<<<< HEAD
-=======
-    "firebase": "^7.0.0",
->>>>>>> 0fb382854fe6ccfd4a146d3a7b9974f271687d9c
-    "react": "^16.9.0",
-    "react-dom": "^16.9.0",
-    "react-scripts": "3.1.1"
+    "react": "^16.10.0",
+    "react-dom": "^16.10.0",
+    "react-scripts": "3.1.2"
   },
   "scripts": {
     "start": "react-scripts start",

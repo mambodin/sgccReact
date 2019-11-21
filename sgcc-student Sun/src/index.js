@@ -5,9 +5,16 @@ import Calculator from './Calculator'
 import Counter from './Counter'
 import NoteApp from './NoteApp'
 import Indecision from './Indecison'
+import PhotoAlbum from './PhotoAlbum'
 
 
 let root = document.getElementById('root')
+
+let jsx = (
+    <div>
+        <p>This is my div</p>
+    </div>
+)
 
 let superhero = [{
     title: 'Batman',
@@ -63,6 +70,10 @@ const App = () => {
     )
 }
 
+<<<<<<< HEAD
 ReactDOM.render(<Indecision /> , root)
+=======
+ReactDOM.render(jsx , root)
+>>>>>>> 0fb382854fe6ccfd4a146d3a7b9974f271687d9c
 
 
