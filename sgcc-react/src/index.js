@@ -7,10 +7,12 @@ import App from './Components/App';
 import Calculator2 from './Components/Calculator2';
 import Indecision from './Components/Indecision';
 import Inventory from './Components/PhotoAlbum'
+import PhotoAlbum from './Components/PhotoAlbum'
+import Project from './Components/Project'
 
 let Appl = () => {
     return (
-    < Calculator2 />
+    < Project />
     )
 }
 

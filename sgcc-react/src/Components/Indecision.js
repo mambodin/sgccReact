@@ -32,10 +32,11 @@ const Indecision = () => {
     })
 
     return (
-        <div>
-            <h1>Let the computer decide!</h1>
-
-            <div className="choice">
+        <div className="mainApp">
+            <div>
+                <h1>Let the computer decide!</h1>
+            </div>
+            <div >
                 {choices.length === 0 ? <p>No Choices here!!??!?!?</p> :
                     <ul>
 
@@ -45,21 +46,25 @@ const Indecision = () => {
                     </ul>
                 }
             </div>
-            <p>What are your choices</p>
-            <input onChange={handleInput} type="text" value={input}></input>
-            <br />
-            <button onClick={handleChoice}>Submit</button>
-            <button onClick={handleReset}>Reset</button>
+            <div >
+                <p>What are your choices</p>
+                <input onChange={handleInput} type="text" value={input}></input>
+                <br />
+                <div>
+                    <button onClick={handleChoice}>Submit</button>
+                    <button onClick={handleReset}>Reset</button>
+                </div>
+            </div>
 
-            <div className="decision">
+            <div >
 
                 {
                     choices.length > 1 ? <button onClick={handleDecision}>Make My Choice!</button> : ''
                 }
-                {decision === '' ? <p></p> : <p>The computer has decided that you shall <br/>{decision}!</p>}
+                {decision === '' ? <p></p> : <p>The computer has decided that you shall <br />{decision}!</p>}
 
             </div>
-               
+
 
 
         </div>
