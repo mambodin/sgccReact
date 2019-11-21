@@ -19,11 +19,7 @@ const DataPull = () => {
 
         })
 
-<<<<<<< HEAD
-        return () => fireBasePull()
-=======
         return () => firebase.database().off()
->>>>>>> 0fb382854fe6ccfd4a146d3a7b9974f271687d9c
     }, [])
 
     return data
@@ -93,11 +89,7 @@ const Inventory = () => {
                 items.map(d => {
                     return (
                         <div key={d[0]}>
-<<<<<<< HEAD
-                            <h2 >{d[1].title}</h2>
-=======
                             <h2 >{d[1].title}</h2   >
->>>>>>> 0fb382854fe6ccfd4a146d3a7b9974f271687d9c
                             <img src={d[1].picture} width="400" />
                             <p>{d[1].caption}</p>
                         </div>
