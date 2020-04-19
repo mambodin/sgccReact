@@ -31,7 +31,7 @@ const Project = () => {
     }
 
     let pullData = async (q) => {
-        let data = await fetch('https://newsapi.org/v2/top-headlines?' +
+        let data = await fetch('https://newsapi.org/v2/everything?' +
             `q=${q}&` +
             'apiKey=643ef24572b44968b5a633e48cc5d856')
         let dataJson = await data.json()
