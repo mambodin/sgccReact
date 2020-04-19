@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from 'react';
-import "../Css/Calculator.css"
+import "./Css/Calculator.css"
 
-const Calculator2 = () => {
-    let [display, setDisplay] = useState(0)
+const Calculator = () => {
+    let [display, setDisplay] = useState("0")
     let [inputs, setInputs] = useState(0)
 
 
@@ -18,9 +18,15 @@ const Calculator2 = () => {
     }
 
     let execute = () => {
-        // console.log(inputs)
-        // console.log(eval(inputs))
-        setDisplay(eval(inputs))
+        let result
+        if (display === '0') {
+            setDisplay(eval(inputs))
+        } else {
+            result = eval(eval(String(display) + inputs))
+            setDisplay(result)
+                -
+        }
+
         setInputs(0)
     }
 
@@ -62,4 +68,4 @@ const Calculator2 = () => {
 }
 
 
-export default Calculator2
+export default Calculator
