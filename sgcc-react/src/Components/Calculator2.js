@@ -22,20 +22,50 @@ const Calculator = () => {
         if (display === '0') {
             setDisplay(eval(inputs))
         } else {
-            result = eval(eval(String(display) + inputs))
+            result = eval(String(display) + inputs)
             setDisplay(result)
-                -
         }
 
         setInputs(0)
     }
 
+    let keyPress = (e) => {
+        if (e.keyCode >= 97 && e.keyCode <= 111) {
+            if (inputs === 0) {
+                setInputs(e.key)
+            }
+            else {
+                setInputs(inputs + e.key)
+
+            }
+        } else if (e.keyCode === 13) {
+            execute()
+        } else if (e.keyCode === 8 && inputs.length > 0) {
+
+            if (inputs.length === 1) {
+                setInputs(0)
+            } else {
+                setInputs(inputs.slice(0, -1))
+
+            }
+
+
+        }
+
+    }
+
+
+    useEffect(() => {
+        console.log(String(inputs[0]))
+        console.log(String(inputs.length))
+    }, [inputs])
+
 
     return (
-        <div>
-            <div className="display">
+        <div onKeyDown={keyPress} tabIndex="-1">
+            <div className="display" >
                 <h2>{display}</h2>
-                <h1>{inputs}</h1>
+                <h1 >{inputs}</h1>
             </div>
             <div className="layout">
                 <button className="button" onClick={buttonPress("1")}> 1 </button>
