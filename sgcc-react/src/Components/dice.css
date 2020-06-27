@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Pangolin&display=swap');
+.dice{
+    border: 2px red solid;
+    border-radius:1em;
+    padding: 1em;
+    margin: 1em;
+    background-color:rgb(146, 211, 126);
+    font-family: 'Pangolin', cursive;
+
+}
+
+
+input[type=number], select{
+    padding: 0.5em;
+    margin: 0.5em;
+
+}
+
+input[type=number]{
+    width: 50px;
+
+}
+
+span{
+    margin-left: 2em;
+    border: 1px red solid;
+    border-radius: 0.5em;
+    padding: 0.5em 1em 0.5em 1em;
+    background-color:white;
+}
+
+button{
+    font-family:'Pangolin', cursive;
+    padding: 0.5em;
+    background-color:#50e40b;
+    border-radius: 0.5em;
+    border-color:red;
+    border-width:2px;
+}
+
+button:hover{
+    border-color:blue;
+}

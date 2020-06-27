@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Pangolin&display=swap');
+
+.mainApp{
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas:
+    "title title"
+    "dice logs";
+    column-gap: 1em;
+}
+
+
+.diceArea{
+    grid-area: dice;
+
+
+}
+
+
+.logs{
+    grid-area: logs;
+    background-color:rgba(146, 211, 126,70%);
+    padding-left:1em;
+    margin-right:2em;
+    margin-top:1em;
+    border: 2px yellow solid;
+    border-radius:1em;
+
+}
+
+.logs p{
+    color:black;
+}
+
+.title{
+    grid-area:title;
+    text-align:center;
+    align-self: start;
+    font-size: 3em;
+
+    margin: 0.5em;
+}
+
+.title h2{
+    background-color:rgba(2, 128, 75, 0.7);
+    border-top:3px rgb(184, 184, 0) solid;
+    border-bottom:3px rgb(184, 184, 0) solid;
+}
+

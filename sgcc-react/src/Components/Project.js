@@ -26,8 +26,9 @@ const Project = () => {
     // }
 
     let submitQuery = ()=> {
-        setQuery('')
+
         pullData(query)
+        setQuery('')
     }
 
     let pullData = async (q) => {
@@ -44,6 +45,7 @@ const Project = () => {
             `country=sg&` +
             'apiKey=643ef24572b44968b5a633e48cc5d856')
         let dataJson = await data.json()
+        console.log(dataJson)
         setNewsData(dataJson.articles)
     }
 
@@ -51,7 +53,6 @@ const Project = () => {
     useEffect(() => {
         pullHeadlines()
 
-        console.log("run")
     }, [])
 
 
@@ -63,7 +64,7 @@ const Project = () => {
             Search: <input type="text" onChange={queryChange} value={query}></input>
             <button onClick={submitQuery}>Search</button>
             {
-                newsData.map((news) => {
+                !newsData ? '' : newsData.map((news) => {
                     return (
                         <News title={news.title}
                             description={news.description}

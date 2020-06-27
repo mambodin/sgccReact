@@ -9,10 +9,11 @@ import Indecision from './Components/Indecision';
 import Inventory from './Components/PhotoAlbum'
 import PhotoAlbum from './Components/PhotoAlbum'
 import Project from './Components/Project'
+// import DnDDice from './Components/DnDDice'
 
 let Appl = () => {
     return (
-    < Indecision />
+    < Project />
     )
 }
 
